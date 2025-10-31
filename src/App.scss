@@ -1,0 +1,87 @@
+.chatgpt {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background: #020024;
+  background: linear-gradient(
+    353deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 45%,
+    rgba(0, 212, 255, 1) 89%
+  );
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-right: 2px solid black;
+    // width:10%;
+    padding: 10px;
+    .bars {
+      margin-top: 10px;
+      // margin-left: 25px
+      cursor: pointer;
+    }
+    .newChat {
+      margin-top: 40px;
+      display: flex;
+      border: 1px solid white;
+      padding: 10px;
+      border-radius: 20px;
+      background: #020024;
+      background: linear-gradient(
+        353deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 45%,
+        rgba(0, 212, 255, 1) 89%
+      );
+      cursor: pointer;
+      // color: black;
+      font-size: 17px;
+      width: 100%;
+    }
+    .newChat:hover {
+      background-color: darkgray;
+    }
+    .recent {
+      display: flex;
+      margin-top: 40px;
+      border: 1px solid rgb(59, 51, 50);
+      border-radius: 20px;
+      padding: 5px;
+      width: 100%;
+      background: #020024;
+      background: linear-gradient(
+        353deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 45%,
+        rgba(0, 212, 255, 1) 89%
+      );
+    }
+    .recent:hover {
+      background-color: darkgray;
+    }
+  }
+  .chatsection {
+    height: 100%;
+    width: 90%;
+    // border: 1px solid red;
+    .inputchat {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      .inputsection {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        margin-top: 350px;
+        left: 900;
+        height: 8vh;
+        width: 80%;
+      }
+    }
+  }
+}
