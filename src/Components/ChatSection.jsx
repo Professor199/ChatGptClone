@@ -171,7 +171,10 @@ useEffect(() => {
             textAlign: "center",
             fontWeight: "normal",
             fontSize:"18px",
-            fontFamily:"monospace"
+            fontFamily:"monospace",
+            marginBottom:0,
+            marginTop:prompt.length>0 || response?.length>0?"52px":0,
+            minHeight:"50px"
           }}
           value={prompt}
           onChange={(e) => {
@@ -193,6 +196,8 @@ useEffect(() => {
             height: "90%",
             cursor: "pointer",
             padding: "5px",
+              marginTop:prompt.length>0 || response?.length>0?"52px":0,
+            minHeight:"50px"
           }}
           onClick={() => {sent(prompt);setPrompt("");updateCurrent()}}
         >
