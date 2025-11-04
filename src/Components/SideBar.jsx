@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Icon } from "semantic-ui-react";
 
 const SideBar = ({ setWidthBar, recentPrompt }) => {
-  const [extend, setExtend] = useState(true);
+  const [extend, setExtend] = useState(false);
   //   const [widthBar, setWidthBar] = useState();
   console.log(recentPrompt,"++++++++recent")
   return (
